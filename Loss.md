@@ -22,16 +22,32 @@ Ex. 앞면 2번 뒷면 1번(데이터 분포) 나올 확률이 3/8(정답)일때
 * 2가지 선택중에서 1가지 결과만 나오는 분포이다. 이항분포라고도 한다.
 ![image](https://user-images.githubusercontent.com/63588046/198892136-33a86a24-dbce-4d6e-9c05-0d6805fa7c3a.png)
 
+* 베르누이 분포의 로그 가능도
+![image](https://user-images.githubusercontent.com/63588046/198893107-b91da010-26d6-42f9-a2c5-d69259c9a533.png)
+
 #### 엔트로피
 * 엔트로피 : 발생할 가능성이 적은 정도 + 그것을 표현하기 위한 자원량
 
-![image](https://user-images.githubusercontent.com/63588046/198892979-7bfe84ec-9eb0-4988-addd-8095ea77ea79.png)
+![image](https://user-images.githubusercontent.com/63588046/198893892-6dd74d75-c15b-4654-a194-61fe7828743e.png)
+
+#### 크로스 엔트로피
+* 다른 확률 분포가 같은 사건에 대해 가지는 정보량
+![image](https://user-images.githubusercontent.com/63588046/198893222-0f779f2d-ce4c-4494-bebf-1fe973669404.png)
 
 
 ## BCE Loss(Binary Cross Entropy Loss)
 ![image](https://user-images.githubusercontent.com/63588046/198890853-9d422507-3fb8-4a57-aeaa-0bdda342869d.png)
 
 #### 유도
-* 베르누이 분포의 로그 가능도
-![image](https://user-images.githubusercontent.com/63588046/198892637-c8c045e9-f57e-41a7-b2a3-6b8af0fee256.png)
+![image](https://user-images.githubusercontent.com/63588046/198893416-4d1102ab-e655-474d-8f7c-a550c5debffb.png)
+
+## KL Divergence
+* 정보량의 차이에 대한 기댓값 (p->q로 근사할때 얼마나 많은 정보량을 잃어버리는가)
+![image](https://user-images.githubusercontent.com/63588046/198893509-14fee7d8-7ad1-4519-bc01-eb0d80280fcf.png)
+
+![image](https://user-images.githubusercontent.com/63588046/198893569-e0a49f5c-a557-4bae-a11c-284d2becf1ec.png)
+
+## BCE와 KL과의 관계
+![image](https://user-images.githubusercontent.com/63588046/198893610-42c4f3c4-c45c-4a1b-a9a5-e275437dc966.png)
+
 
